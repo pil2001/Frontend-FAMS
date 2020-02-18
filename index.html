@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
+</head>
+<body>
+  <!-- NAVIGATION HEAD -->
+  <nav class="navbar fixed-top navbar-expand-sm navbar-light">
+      <a href="#">
+        <img class="logo" src="img/logo.png" alt="Logo FPT"/>
+      </a>
+      <a class="navbar-brand mr-auto text-white" href="#">FPT HR UTILITY</a>
+      <div>
+          <a class="navbar-brand text-white" href="login.html"><i class="fa fa-user"></i>Login</a>
+          <a class="navbar-brand text-white" href="#"><i class="fa fa-sign-out"></i>Logout</a>
+      </div>
+  </nav>
+
+  <!-- NAVIGATION LEFT -->
+  <nav class="navbar-primary">
+    <a href="#" class="btn-expand-collapse"><i class="fa fa-exchange"></i></a>
+    <ul class="navbar-primary-menu">
+      <li>
+        <div class="role pl-3 pr-4">
+          <label for="inputState">Your role now is:</label>
+          <p>
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>ABC</option>
+              <option>AAB</option>
+              <option>BCC</option>
+            </select>
+          </p>
+        </div>
+      </li>
+      <li>  
+        <a href="#" id="dashBoard"><i class="fa fa-bars icon-none" title="Dashboard"></i><span class="nav-label">Dashboard</span></a>
+      </li>
+      <li>   
+        <a href="#"><i class="fa fa-group icon-none" title="Class Management"></i><span class="nav-label">Class Management</span></a>
+      </li>
+      <li> 
+        <a href="#" id="candManager"><i class="fa fa-vcard-o icon-none" title="Candidate Management"></i><span class="nav-label">Candidate Management</span></a>
+      </li>
+      <li> 
+        <a href="#"><i class="fa fa-group fa-mortar-board icon-none" title="Trainer Management"></i><span class="nav-label">Trainer Management</span></a>
+      </li>
+      <li> 
+        <a href="#"><i class="fa fa-university icon-none" title="Trainee Management"></i><span class="nav-label">Trainee Management</span></a>
+      </li>
+      <li> 
+        <a href="#"><i class="fa fa-cogs icon-none" title="General Setting"></i><span class="nav-label">General Setting</span></a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+    <h3 class="ml-2">Dashboard</h3>
+    <div id="select-display" class="form-row py-4 border-top border-bottom border-dark">
+      <div class="form-inline col-md-3 col-sm-12">
+        <label for="select-dashboard">Dashboard for</label>
+        <select id="select-dashboard" class="form-control ml-4">
+          <option selected>Class</option>
+          <option>Candidate</option>
+          <option>Trainee</option>
+          <option>Trainer</option>
+        </select>
+      </div>
+      <div class="form-inline col-md-3 col-sm-12">
+        <label for="select-location">Location</label>
+        <select id="select-location" class="form-control ml-4">
+          <option selected>All</option>
+          <option>ABC</option>
+          <option>ABC</option>
+          <option>ABC</option>
+        </select>
+      </div>
+      <div class="form-inline col-md-3 col-sm-12">
+        <label for="select-type">Type of Dashboard</label>
+        <select id="select-type" class="form-control ml-4">
+          <option selected>Table</option>
+          <option>Chart</option>
+
+        </select>
+      </div>
+      <div class="form-inline col-md-3 col-sm-12">
+        <label for="select-dashboard">Status</label>
+        <select id="select-dashboard" class="form-control ml-4">
+          <option selected>All</option>
+          <option>ABC</option>
+          <option>ABC</option>
+          <option>ABC</option>
+        </select>
+      </div>
+    </div>
+    <div id="dashboard-area" class="form-row mt-4">
+      <div class="form-group col-md-4 col-sm-12 text-center table-div">
+        <label for="">Planning</label>
+        <table class="table table-bordered table-striped table-sm tableFixHead">
+          <thead class="thead-light">
+            <tr>
+              <th>Skill</th>
+              <th>Plan of enrolment</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>.NET</td>
+              <td>130</td>
+            </tr>
+            <tr>
+              <td>Android</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>.NET</td>
+              <td>130</td>
+            </tr>
+            <tr>
+              <td>.NET</td>
+              <td>130</td>
+            </tr>
+            <tr>
+              <td>Android</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>.NET</td>
+              <td>130</td>
+            </tr>
+            <tr>
+              <td>.NET</td>
+              <td>130</td>
+            </tr>
+            <tr>
+              <td>Android</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>.NET</td>
+              <td>130</td>
+            </tr>
+            <tr>
+              <td>.NET</td>
+              <td>130</td>
+            </tr>
+            <tr>
+              <td>Android</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>.NET</td>
+              <td>130</td>
+            </tr>
+            <tr>
+              <td>.NET</td>
+              <td>130</td>
+            </tr>
+            <tr>
+              <td>Android</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>.NET</td>
+              <td>130</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="form-group col-md-4 col-sm-12 text-center ">
+        <label for="">Planned</label>
+        <table class="table table-bordered table-striped table-sm tableFixHead">
+          <thead class="thead-light">
+            <tr>
+              <th>Skill</th>
+              <th>Plan of enrolment</th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>.NET</td>
+                  <td>130</td>
+                </tr>
+                <tr>
+                  <td>Android</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>.NET</td>
+                  <td>130</td>
+                </tr>
+                <tr>
+                  <td>.NET</td>
+                  <td>130</td>
+                </tr>
+                <tr>
+                  <td>Android</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>.NET</td>
+                  <td>130</td>
+                </tr>
+                <tr>
+                  <td>.NET</td>
+                  <td>130</td>
+                </tr>
+                <tr>
+                  <td>Android</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>.NET</td>
+                  <td>130</td>
+                </tr>
+                <tr>
+                  <td>.NET</td>
+                  <td>130</td>
+                </tr>
+                <tr>
+                  <td>Android</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>.NET</td>
+                  <td>130</td>
+                </tr>
+                <tr>
+                  <td>.NET</td>
+                  <td>130</td>
+                </tr>
+                <tr>
+                  <td>Android</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>.NET</td>
+                  <td>130</td>
+                </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+      <div class="form-group col-md-4 col-sm-12 text-center ">
+        <label for="">In progress</label>
+        <table class="table table-bordered table-striped table-sm tableFixHead">
+          <thead class="thead-light">
+            <tr>
+              <th>Skill</th>
+              <th>Plan of enrolment</th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>.NET</td>
+                  <td>130</td>
+                </tr>
+                <tr>
+                  <td>Android</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>.NET</td>
+                  <td>130</td>
+                </tr>
+                <tr>
+                  <td>.NET</td>
+                  <td>130</td>
+                </tr>
+                <tr>
+                  <td>Android</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>.NET</td>
+                  <td>130</td>
+                </tr>
+                <tr>
+                  <td>.NET</td>
+                  <td>130</td>
+                </tr>
+                <tr>
+                  <td>Android</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>.NET</td>
+                  <td>130</td>
+                </tr>
+                <tr>
+                  <td>.NET</td>
+                  <td>130</td>
+                </tr>
+                <tr>
+                  <td>Android</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>.NET</td>
+                  <td>130</td>
+                </tr>
+                <tr>
+                  <td>.NET</td>
+                  <td>130</td>
+                </tr>
+                <tr>
+                  <td>Android</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>.NET</td>
+                  <td>130</td>
+                </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer fixed-bottom">
+        <p class="text-center">&copy; Copyright Fresher Academy 2019</p>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,323 @@
+.navbar-light {
+  background-color: #205081;
+}
+a.navbar-brand.mr-auto.text-white {
+  font-size: 1.5em;
+}
+.tab-content{
+  margin-bottom: 4em;
+}
+strong{
+  margin-left: 20px
+}
+.navbar-primary {
+  padding-top: 60px;
+  top: 0;
+  position: fixed;
+  height: calc(100vh);
+  overflow-y: auto;
+  background-color: #ddd;
+  border-right: 1px solid #626262;
+  width: 235px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.navbar-primary.collapsed {
+  width: 60px;
+}
+.navbar-primary.collapsed .nav-label {
+  display: none;
+}
+.btn-expand-collapse {
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  font-size: 20px;
+  text-align: center;
+}
+.logo{
+  margin-right: 7em;
+  width: 75px;
+}
+#inputState{
+  width: 100%;
+  align-content: center !important;
+}
+.navbar-primary-menu,
+.navbar-primary-menu li {
+  margin:0;
+  padding:0;
+}
+.navbar-primary-menu li a {
+  display: block;
+  padding: 10px 18px;
+  text-align: left;
+}
+.navbar-primary-menu li a:hover {
+  font-weight: bolder;
+  text-decoration: none;
+}
+span.nav-label {
+  margin-left: 15px;
+  list-style: disc outside none;
+  display: list-item;
+}
+.main-content{
+  padding-top: 5em;
+  min-height: calc(100vh);
+  padding-left: 0em;
+  margin-left: 235px;
+}
+.main-content .row{
+  margin-right: 0;
+}
+.collapsed + .main-content {
+  margin-left: 60px;
+}
+.search label{
+  width: 4em;
+}
+.search .btn-icon {
+  position: relative;
+  padding-right: 2em;
+  bottom: 0.2em;
+}
+
+.search .fa{
+  position: absolute;
+  padding: 0.5em;
+}
+.search input[type="date"]{
+  width: 10em;
+}
+ul.pagination{
+  float: right;
+}
+.btn{
+  border: 1px solid #626262;
+}
+.form-row{
+  margin-right: 0;
+  margin-left: 0;
+}
+.footer{
+  border-top: 1px solid #626262;
+  width: 100%;
+  background: #ddd;
+}
+/* CLASS GLOBAL */
+.icon-none{
+  display: none;
+}
+
+
+
+/* VIEW RESULT DUNGN1 */
+
+
+#main-title .nav-link{
+  background-color: white;
+  border: 1px solid;
+}
+#main-title .nav-tabs {
+  border-bottom: none;
+}
+#main-title .nav-item {
+  /* border: 1px solid black; */
+  border-bottom: 0;
+  border-collapse: collapse;
+}
+#main-title .tab-pane {
+  border: 1px solid black;
+}
+#main-title #Result{
+  padding: 1em;
+  margin: 0 1em;
+}
+#main-title #Candidate-Info{
+  padding: 1em;
+  margin: 0 1em;
+}
+#main-title .table-header{
+  margin-bottom: 0px !important; 
+  border: 2px solid black;
+}
+#main-title .table-content{
+  border: 2px solid black; 
+  border-top: none !important;
+}
+#main-title .tr-header{
+  background-color: cornflowerblue;
+}
+#main-title .tr-content-th{
+  background-color: #AEAEB3;
+}
+#main-title .tr-content-td{
+  background-color: #D5D5D8;
+}
+#main-title .collapse-content{
+  margin-top: 0px;
+}
+#main-title #main-tab li a{
+  background-color: lightgray;
+}
+#main-title #main-tab li a.active{
+  background-color: white;
+}
+#main-title td, th{
+  border: 2px solid black;
+}
+#main-title .btn-calendar{
+  float:right !important;
+  width: auto !important;
+}
+#main-title input{
+  width: 100%;
+  border:none;
+}
+#main-title .txt-calendar{
+  float:left !important;
+  width: 90% !important;
+}
+
+
+/* PHUONG */
+.information{
+  margin-top: 20px;
+}
+#main-cadidate .input-group-text,
+#main-cadidate .form-control {
+  border-radius: 0px;
+}
+#main-cadidate .input-group i {
+  position: absolute;
+}
+#main-cadidate .fa
+ {
+  right: 0px;
+  padding: 10px 20px 10px 10px;
+}
+#main-cadidate .custom-file-input {
+  border: 1px solid #ccc;
+}
+#main-cadidate label {
+  display: inline;
+  margin-bottom: 0px !important ;
+}
+#main-cadidate .col-6,
+#main-cadidate .col {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+#main-cadidate .tab-content {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 29px;
+}
+#main-cadidate .row.button {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+#main-cadidate button#close {
+  border: 1px solid;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#main-cadidate button#submit {
+  margin-right: 10px;
+}
+#main-cadidate .fa-undo {
+  padding: 0px 5px 0px 5px;
+}
+#main-cadidate .dropdown-menu {
+  transform: translate(138%, 36px) !important;
+  width: 300px;
+}
+#main-cadidate button#menuUni {
+  border: 1px solid #ccc;
+  background-color: lavender;
+}
+#main-cadidate button#menuFacu {
+  border: 1px solid #ccc;
+  border-radius: 0px;
+}
+#main-cadidate .row.input-group.title {
+  padding-left: 10px;
+  background-color: #0089F4;
+}
+#main-cadidate .input-group-append .input-group-text+.input-group-text{
+  margin-left: 0px;
+}
+#main-cadidate .input-group-append {
+  margin-left: 0px;
+}
+#main-cadidate span{
+  color: red;
+}
+.error{
+  border: 1px solid #ff0000;
+}
+div#viewCandidate{
+  width: 90%;
+  margin:30px auto;
+
+}
+.input-group>.input-group-append>.input-group-text,.row.input-group.title{
+  border: 1px solid rgb(85,85,85);
+}
+.col-lg-3.input-group-text,.col-sm-2.input-group-text{
+  background-color: #aeaeb3;
+}
+
+/* Tuan */
+#dashboard-area .table.table-bordered.table-striped {
+
+  width: 80%;
+  margin: 0px auto;
+}
+#dashboard-area .table-div{
+  overflow-y:auto;
+}
+/* 
+.tableFixHead tbody {
+  overflow-y: auto;
+  width: 100%;
+}
+
+.tableFixHead thead,
+.tableFixHead tbody,
+.tableFixHead tr,
+.tableFixHead td,
+.tableFixHead th {
+  display: block;
+  float: left;
+}
+
+.tableFixHead tbody td,
+.tableFixHead thead>tr>th {
+  float: left;
+  border-bottom-width: 0;
+} */
+#introdution{
+  background-color:#eb13133d;
+}
+#dashboard-area .tableFixHead{
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+#dashboard-area .tableFixHead tbody{
+display:block;
+width: 100%;
+overflow: auto;
+height: 200px;
+}
+#dashboard-area .tableFixHead thead tr {
+ display: block;
+}
+#dashboard-area .tableFixHead th, .tableFixHead td {
+padding: 5px;
+text-align: center;
+width: 200px;
+}

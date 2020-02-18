@@ -1,0 +1,97 @@
+.input-group-text,
+.form-control {
+  border-radius: 0px;
+}
+.input-group i {
+  position: absolute;
+}
+.fa
+ {
+  right: 0px;
+  padding: 10px 20px 10px 10px;
+}
+.custom-file-input {
+  border: 1px solid #ccc;
+}
+label {
+  display: inline;
+  margin-bottom: 0px !important ;
+}
+.col-6,
+.col {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.tab-content {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 29px;
+}
+.row.button {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+button#close {
+  border: 1px solid;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+button#submit {
+  margin-right: 10px;
+}
+.fa-undo {
+  padding: 0px 5px 0px 5px;
+}
+.dropdown-menu {
+  transform: translate(138%, 36px) !important;
+  width: 300px;
+}
+button#menuUni {
+  border: 1px solid #ccc;
+  background-color: lavender;
+}
+button#menuFacu {
+  border: 1px solid #ccc;
+  border-radius: 0px;
+}
+.row.input-group.title {
+  padding-left: 10px;
+  background-color: lightskyblue;
+}
+.input-group-append .input-group-text+.input-group-text{
+  margin-left: 0px;
+}
+.input-group-append {
+  margin-left: 0px;
+}
+/* span{
+  color: red;
+} */
+.error{
+  border: 1px solid #ff0000;
+}
+/* .select-checkbox option::before{
+    font-family: Arial;
+    content: "\f096";
+    width: 1.3em;
+    display: inline-block;
+    margin-left: 2px;
+}
+.select-checkbox option:checked::before{
+    content: "\f046";
+} */
+
+
+/*view candidate */
+div#viewCandidate{
+  width: 90%;
+  margin:30px auto;
+
+}
+.input-group>.input-group-append>.input-group-text,.row.input-group.title{
+  border: 1px solid rgb(85,85,85);
+}
+.col-lg-3.input-group-text,.col-sm-2.input-group-text{
+  background-color: #ccc
+}

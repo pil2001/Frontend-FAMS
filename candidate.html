@@ -1,0 +1,243 @@
+<div id="main-cadidate">
+    <strong>Create Candidate</strong><br>
+    <div class="information">
+        <div class="tabview">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="information-tab" href="#personalInfor" role="tab" data-toggle="tab"
+                        aria-selected="true">Candidate Information</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="result-tab" href="#resultInfor" role="tab" data-toggle="tab"
+                        aria-selected="false">Result</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Tab panes -->
+
+        <div class="tab-content">
+
+            <div role="tabpanel" class="tab-pane fade show active" id="personalInfor" aria-labelledby="information-tab">
+                <div class="message" id="message"></div>
+                <div class="row input-group title">
+                    <p id="title">Personal Information</p>
+                </div>
+                <form action="#" id="submitCandidate">
+                    <div class="row input-group">
+                        <div class="col-6 input-group-append">
+                            <div class="col-lg-3 input-group-text">Empl ID</div>
+                            <div class="col-lg-6 input-group-text">E01102019</div>
+                            <div class="col-lg-3 input-group-text">Type</div>
+                        </div>
+                        <div class="col-6 input-group-append">
+                            <div class="col-lg-3 input-group-text">Candidate</div>
+                            <div class="col-lg-6 input-group-text">Status</div>
+                            <div class="col-lg-3 input-group-text">New</div>
+                        </div>
+                    </div>
+                    <div class="row input-group">
+                        <div class="col-6 input-group-append">
+                            <div class="col-lg-3 input-group-text">Application Date</div>
+                            <input type="input" class="form-control" name="applicationDate" id="applicationDate">
+                            <i class="fa fa-calendar" id="application"></i>
+                        </div>
+                        <div class="col-6 input-group-append">
+                            <div class="col-lg-3 input-group-text">Channel <span>*</span></div>
+                            <input list="channel" name="channel" class="form-control">
+                            <datalist id="channel">
+                                <option value="VTV">
+                                <option value="VTC">
+                                <option value="VOV">
+                                <option value="K+">
+                            </datalist>
+                        </div>
+
+                    </div>
+                    <div class="row input-group">
+                        <div class="col-6 input-group-append">
+                            <div class="col-lg-3 input-group-text">Size</div>
+                            <input list="site" name="site" class="form-control" multiple="multiple">
+                            <datalist id="site">
+                                <option value="Ha Noi">
+                                <option value="TP.HCM">
+                                <option value="Da nang">
+                                <option value="Bac Ninh">
+                            </datalist>
+                        </div>
+                        <div class="col-6 input-group-append">
+                            <div class="col-lg-3 input-group-text">Account</div>
+                            <input class="input-group-text form-control">
+                        </div>
+
+                    </div>
+                    <div class="row input-group">
+                        <div class="col-6 input-group-append">
+                            <div class="col-lg-3 input-group-text">Name<span>*</span></div>
+                            <input type="text" id="name" name="name" class="form-control">
+                        </div>
+                        <div class="col-6 input-group-append">
+                            <div class="col-lg-3 input-group-text">Gender<span>*</span></div>
+                            <div class="form-control">
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="male" value="male"
+                                        checked>
+                                    <label class="form-check-label" for="male">Male</label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="female"
+                                        value="female">
+                                    <label class="form-check-label" for="female">Female</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row input-group">
+                        <div class="col-6 input-group-append">
+                            <div class="col-lg-3 input-group-text">DOB<span>*</span></div>
+                            <input type="date" id="dateOfBirth" name="dateOfBirth" class="form-control">
+                        </div>
+                        <div class="col-6 input-group-append">
+                            <div class="col-lg-3 input-group-text">CV</div>
+                            <div class="form-control">
+                                <label id="file-name"></label>
+                                <label for="cv">
+                                    <input type="file" id="cv" style="display: none;">
+                                    <i class="fa fa-upload" aria-hidden="true"></i>
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row input-group">
+                        <div class="col-6 input-group-append">
+                            <div class="col-lg-3 input-group-text">University</div>
+
+                            <label id="university" class="form-control"></label>
+                            <button type="button" class="btn bg-light dropdown-toggle dropdown-toggle-split"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="menuUni">
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="menuUni">
+                                <div class="dropdown-item">
+                                    <input class="form-check-input" type="checkbox" name="universityCheck" id="HUST"
+                                        value="HUST" onclick="checkUni(this)">
+                                    <label class="form-check-label" for="HUST">HUST</label>
+                                </div>
+                                <div class="dropdown-item">
+                                    <input class="form-check-input" type="checkbox" name="universityCheck" id="PTIT"
+                                        value="PTIT" onclick="checkUni(this)">
+                                    <label class="form-check-label" for="PTIT">PTIT</label>
+                                </div>
+                                <div class="dropdown-item">
+                                    <input class="form-check-input" type="checkbox" name="universityCheck" id="TLU"
+                                        value="TLU" onclick="checkUni(this)">
+                                    <label class="form-check-label" for="TLU">TLU</label>
+                                </div>
+                                <div class="dropdown-item">
+                                    <input class="form-check-input" type="checkbox" name="universityCheck" id="newUni"
+                                        onclick="checkNewUni(this)">
+                                    <label class="form-check-label" for="newUni">Other</label>
+                                </div>
+                                <div class="dropdown-item" id="addUni" hidden="true">
+                                    <input type="text" class="form-control" placeholder="Insert University here"
+                                        id="newUniversity" name="newUniversity">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 input-group-append">
+                            <div class="col-lg-3 input-group-text">Facutly</div>
+                            <label id="facutly" class="form-control"></label>
+                            <button type="button" class="btn bg-light dropdown-toggle dropdown-toggle-split"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="menuFacu">
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="menuFacu">
+                                <div class="dropdown-item">
+                                    <input class="form-check-input" type="checkbox" name="facuCheck" id="DTVT"
+                                        value="DTVT" onclick="checkFacu(this)">
+                                    <label for="DTVT" class="form-check-lable">DTVT</label>
+                                </div>
+                                <div class="dropdown-item">
+                                    <input class="form-check-input" type="checkbox" name="facuCheck" id="CNTT"
+                                        value="CNTT" onclick="checkFacu(this)">
+                                    <label for="CNNT" class="form-check-lable">CNTT</label>
+                                </div>
+                                <div class="dropdown-item">
+                                    <input class="form-check-input" type="checkbox" name="facuCheck" id="ATTT"
+                                        value="ATTT" onclick="checkFacu(this)">
+                                    <label for="ATTT" class="form-check-lable">ATTT</label>
+                                </div>
+                                <div class="dropdown-item">
+                                    <input class="form-check-input" type="checkbox" name="universityCheck" id="newFacu"
+                                        onclick="checkNewFacu(this)">
+                                    <label class="form-check-label" for="newFacu">Other</label>
+                                </div>
+                                <div class="dropdown-item" id="addFacu" hidden="true">
+                                    <input type="text" class="form-control" placeholder="Insert Facutly here"
+                                        id="newFacutly" name="newFacutly">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row input-group">
+                        <div class="col-6 input-group-append">
+                            <div class="col-lg-3 input-group-text">Phone<span>*</span></div>
+                            <input type="text" id="phone" name="phone" class="form-control">
+                        </div>
+                        <div class="col-6 input-group-append">
+                            <div class="col-lg-3 input-group-text">Email<span>*</span></div>
+                            <input type="email" class="form-control" id="email" name="email">
+                        </div>
+                    </div>
+
+                    <div class="row input-group">
+                        <div class="col-6 input-group-append">
+                            <div class="col-lg-3 input-group-text">Skill</div>
+                            <input name="skill" class="form-control" id="skill">
+                        </div>
+                        <div class="col-6 input-group-append">
+                            <div class="col-lg-3 input-group-text">Graduation Year</div>
+                            <input type="input" class="form-control" name="graduationYear" id="graduationYear">
+                            <i class="fa fa-calendar" id="graduation"></i>
+                        </div>
+                    </div>
+
+                    <div class="row input-group">
+                        <div class="col-6 input-group-append">
+                            <div class="col-lg-3 input-group-text">Foregign Language</div>
+                            <input type="text" id="language" name="language" class="form-control">
+                        </div>
+                        <div class="col-6 input-group-append">
+                            <div class="col-3 input-group-text">Level</div>
+                            <input type="text" class="form-control" id="level" name="level">
+                        </div>
+                    </div>
+                    <div class="row input-group">
+                        <div class="col input-group-append">
+                            <div class="col-sm-2 input-group-text">Note</div>
+                            <input type="text" id="note" name="note" class="form-control">
+                        </div>
+
+                    </div>
+                    <div class="row input-group">
+                        <div class="col input-group-append">
+                            <div class="col-sm-2 input-group-text">History</div>
+                            <div class="input-group-text form-control"></div>
+                        </div>
+                    </div>
+                    <div class="row button">
+                        <button type="button" class="btn btn-primary" id="submit">Submit</button>
+                        <button type="button" class="btn" id="close"><i class="fa fa-undo"></i>Close</button>
+                    </div>
+                </form>
+
+               
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="resultInfor" aria-labelledby="result-tab">
+                <p>This is resultInfor</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="/js/candidate.js" type="text/javascript"></script>
